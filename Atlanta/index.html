@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Company In Atlanta GA | Premium Roofing & Siding Specialists</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
+    <!-- HEADER / NAVIGATION -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="text-xl font-black text-slate-900 tracking-tight leading-none">ROOFING COMPANY</span>
+                <span class="text-xs font-bold text-amber-600 tracking-widest uppercase mt-0.5">In Atlanta, GA</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-semibold text-gray-600">
+                <a href="#services" class="hover:text-amber-600 transition">Services</a>
+                <a href="#reviews" class="hover:text-amber-600 transition">Reviews</a>
+                <a href="#quote" class="hover:text-amber-600 transition">Get Estimate</a>
+            </div>
+            <div>
+                <!-- Primary Action Trigger linking directly to their phone action status -->
+                <a href="tel:+14040000000" class="bg-amber-600 hover:bg-amber-700 text-white px-5 py-2.5 rounded-lg font-bold transition flex items-center gap-2">
+                    <i class="fas fa-phone-alt"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-slate-900 text-white py-24 px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center"></div>
+        <div class="relative max-w-5xl mx-auto text-center">
+            <span class="bg-amber-600 text-xs uppercase font-extrabold px-3 py-1.5 rounded-full tracking-wider">Atlanta's Certified Exterior Experts</span>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight mt-4 mb-6 leading-tight">
+                Premium Shingle, Cedar Shake & <span class="text-amber-500">Siding Installation</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto mb-10">
+                From fixing loose shingles and leaky skylights to complete new roofing systems and premium vinyl siding. Engineered to protect your home through heavy Georgia storms.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#quote" class="bg-amber-600 hover:bg-amber-700 text-white text-lg font-bold px-8 py-4 rounded-xl transition shadow-lg shadow-amber-600/30">
+                    Get Free Quote <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#reviews" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white text-lg font-bold px-8 py-4 rounded-xl transition">
+                    View 5-Star Proof
+                </a>
+            </div>
+            <!-- Trust badges matching image_5.png details -->
+            <div class="mt-12 pt-8 border-t border-slate-800 flex flex-wrap justify-center gap-8 text-sm text-slate-400 font-medium">
+                <div><i class="fas fa-star text-amber-500 mr-2"></i> 5.0 Rated Google Contractor</div>
+                <div><i class="fas fa-shield-alt text-amber-500 mr-2"></i> Licensed, Bonded & Insured</div>
+                <div><i class="fas fa-map-marker-alt text-amber-500 mr-2"></i> Piedmont Rd NE, Atlanta</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE SERVICES SECTION (Pulled directly from image_7.png) -->
+    <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">Our Professional Core Services</h2>
+            <p class="text-gray-500 mt-2">Expert residential architectural styles and exterior updates built for long-term curb appeal.</p>
+        </div>
+
+        <!-- Service Category Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 mb-10">
+            <button onclick="switchTab('roofing')" id="btn-roofing" class="tab-btn px-5 py-2.5 font-bold rounded-lg transition bg-amber-600 text-white shadow-md">Roofing Solutions</button>
+            <button onclick="switchTab('specialty')" id="btn-specialty" class="tab-btn px-5 py-2.5 font-bold rounded-lg transition bg-white border border-gray-200 text-gray-700 hover:bg-gray-50">Specialty Roofs</button>
+            <button onclick="switchTab('siding')" id="btn-siding" class="tab-btn px-5 py-2.5 font-bold rounded-lg transition bg-white border border-gray-200 text-gray-700 hover:bg-gray-50">Siding & Gutters</button>
+        </div>
+
+        <!-- Service Tab Panels -->
+        <div class="bg-white rounded-2xl border border-gray-100 p-8 shadow-sm">
+            <!-- Roofing Tab (Default active) -->
+            <div id="tab-roofing" class="tab-panel grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-tools text-amber-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Roof Repair</h4><p class="text-sm text-gray-500 mt-1">Stopping structural leak points, wind damage remediation, and deck patching.</p></div>
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-band-aid text-amber-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Loose Shingles Repair</h4><p class="text-sm text-gray-500 mt-1">Replacing broken or missing asphalt shingles immediately to halt hidden wood rot.</p></div>
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-cloud-sun text-amber-600 text-xl mb-3"></i><h4 class="font-bold text-lg">New Roofing System</h4><p class="text-sm text-gray-500 mt-1">Premium full-scale multi-layered installations with dynamic underlayment structures.</p></div>
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-clipboard-check text-amber-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Roof Inspection</h4><p class="text-sm text-gray-500 mt-1">Complete structural assessments evaluating storm impact, flashing, and ventilation lifespan.</p></div>
+            </div>
+
+            <!-- Specialty Tab -->
+            <div id="tab-specialty" class="tab-panel hidden grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-tree text-amber-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Cedar Shake Roofing</h4><p class="text-sm text-gray-500 mt-1">Premium rustic wood installations combining timeless architectural luxury with durability.</p></div>
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-sun text-amber-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Roof Skylight</h4><p class="text-sm text-gray-500 mt-1">Seamless overhead double-paned flashing and replacement installations that prevent leaks.</p></div>
+            </div>
+
+            <!-- Siding Tab -->
+            <div id="tab-siding" class="tab-panel hidden grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-border-all text-amber-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Siding Installation</h4><p class="text-sm text-gray-500 mt-1">Heavy exterior protective wall structures providing full weather barrier integration.</p></div>
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-home text-amber-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Vinyl Siding</h4><p class="text-sm text-gray-500 mt-1">Ultra-durable, low-maintenance insulated horizontal wall cladding upgrades.</p></div>
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-faucet text-amber-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Gutter Installation & Repair</h4><p class="text-sm text-gray-500 mt-1">Seamless aluminum downspout lines designed to channel heavy Georgia rainwater away from bases.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REAL REVIEWS SECTION (From image_6.png / image_8.png) -->
+    <section id="reviews" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black tracking-tight">Real Reviews From Atlanta Property Owners</h2>
+                <p class="text-slate-400 mt-2">See why local homeowners give our craftsmanship a perfect 5.0 score.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <!-- Review 1 (From image_6.png) -->
+                <div class="bg-slate-800/80 rounded-2xl p-8 border border-slate-700/50 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex gap-1 text-amber-500"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <span class="text-xs bg-amber-600 text-white font-semibold px-2.5 py-1 rounded">Verified Google Review</span>
+                        </div>
+                        <p class="text-slate-300 italic text-lg">
+                            "Positive: Responsiveness, Punctuality, Quality, Professionalism, Value<br>Services: Gutter installation, Roof repair"
+                        </p>
+                    </div>
+                    <div class="mt-6 flex items-center gap-3 border-t border-slate-700/50 pt-4">
+                        <div class="w-10 h-10 bg-amber-600 font-bold rounded-full flex items-center justify-center text-white">PI</div>
+                        <div><h5 class="font-bold text-sm">Pro Idiodz</h5><p class="text-xs text-slate-400">Gutter Installation & Roof Repair Client</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGH CONVERTING LEAD CAPTURE ENGINE -->
+    <section id="quote" class="py-20 max-w-4xl mx-auto px-4">
+        <div class="bg-white rounded-3xl border border-gray-100 shadow-xl overflow-hidden">
+            <div class="bg-amber-600 text-white text-center p-8">
+                <h3 class="text-2xl font-black">Request A Free Consultation & Estimate</h3>
+                <p class="text-amber-100 text-sm mt-1">Fill out this 60-second form to instantly alert our local estimation team.</p>
+            </div>
+            
+            <form id="leadForm" onsubmit="handleFormSubmit(event)" class="p-8 space-y-6">
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">First & Last Name *</label>
+                        <input type="text" id="fullName" required class="w-full border border-gray-200 bg-gray-50 px-4 py-3 rounded-xl focus:outline-none focus:border-amber-500 focus:bg-white transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Phone Number *</label>
+                        <input type="tel" id="phone" required class="w-full border border-gray-200 bg-gray-50 px-4 py-3 rounded-xl focus:outline-none focus:border-amber-500 focus:bg-white transition">
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Atlanta Zip Code *</label>
+                        <input type="text" id="zipCode" required class="w-full border border-gray-200 bg-gray-50 px-4 py-3 rounded-xl focus:outline-none focus:border-amber-500 focus:bg-white transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Primary Service Needed *</label>
+                        <select id="serviceSelect" required class="w-full border border-gray-200 bg-gray-50 px-4 py-3 rounded-xl focus:outline-none focus:border-amber-500 focus:bg-white transition font-medium">
+                            <option value="">-- Choose Option --</option>
+                            <option value="Roof Repair">Roof Repair / Loose Shingles</option>
+                            <option value="New Roofing System">New Roofing System Installation</option>
+                            <option value="Cedar Shake">Premium Cedar Shake Roofing</option>
+                            <option value="Vinyl Siding">Vinyl Siding / Siding Installation</option>
+                            <option value="Skylight / Gutter">Skylight or Gutter Repair</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Describe Your Project Needs (Optional)</label>
+                    <textarea id="description" rows="3" class="w-full border border-gray-200 bg-gray-50 px-4 py-3 rounded-xl focus:outline-none focus:border-amber-500 focus:bg-white transition"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-black text-lg py-4 rounded-xl shadow-lg transition">
+                    Submit Secure Estimate Request
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 border-t border-slate-800 text-slate-500 text-sm py-8 text-center">
+        <p>&copy; 2026 ROOFING COMPANY IN Atlanta, GA. Built to optimize Google Local Search conversions.</p>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPTS -->
+    <script>
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.add('hidden'));
+            document.getElementById('tab-' + tabId).classList.remove('hidden');
+            
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.className = "tab-btn px-5 py-2.5 font-bold rounded-lg transition bg-white border border-gray-200 text-gray-700 hover:bg-gray-50";
+            });
+            document.getElementById('btn-' + tabId).className = "tab-btn px-5 py-2.5 font-bold rounded-lg transition bg-amber-600 text-white shadow-md";
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            const formData = {
+                access_key: "ef2ef335-2ab1-4f93-9c0f-c026461a1e4b", 
+                name: document.getElementById('fullName').value,
+                phone: document.getElementById('phone').value,
+                zipcode: document.getElementById('zipCode').value,
+                service: document.getElementById('serviceSelect').value,
+                description: document.getElementById('description').value
+            };
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    alert(`Thank you! Your estimate request has been sent successfully.`);
+                    document.getElementById('leadForm').reset();
+                } else {
+                    alert(json.message);
+                }
+            })
+            .catch(error => {
+                alert("Something went wrong. Please try again.");
+            });
+        }
+    </script>
+</body>
+</html>
