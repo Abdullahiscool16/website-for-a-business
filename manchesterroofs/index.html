@@ -1,1 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester Roofs Ltd | Premier Roofing & Roofline Specialists</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
+    <!-- HEADER / NAVIGATION -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="text-xl font-black text-slate-900 tracking-tight">MANCHESTER ROOFS</span>
+                <span class="text-xs font-bold text-orange-600 tracking-widest uppercase -mt-1">Ltd</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-semibold text-gray-600">
+                <a href="#services" class="hover:text-orange-600 transition">Services</a>
+                <a href="#reviews" class="hover:text-orange-600 transition">Reviews</a>
+                <a href="#quote" class="hover:text-orange-600 transition">Get Estimate</a>
+            </div>
+            <div>
+                <a href="tel:+441613390436" class="bg-orange-600 hover:bg-orange-700 text-white px-5 py-2.5 rounded-lg font-bold transition flex items-center gap-2">
+                    <i class="fas fa-phone-alt"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-slate-900 text-white py-24 px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1632750804404-3700b01dbfe5?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center"></div>
+        <div class="relative max-w-5xl mx-auto text-center">
+            <span class="bg-orange-600 text-xs uppercase font-extrabold px-3 py-1.5 rounded-full tracking-wider">Manchester's Trusted Specialists</span>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight mt-4 mb-6 leading-tight">
+                Premier Roofing, Flat Roofs & <span class="text-orange-500">Rooflines</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto mb-10">
+                From emergency storm and wind damage repairs to flawless slate work and guttering, we offer heavy-duty exterior solutions backed by 5-star local service.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#quote" class="bg-orange-600 hover:bg-orange-700 text-white text-lg font-bold px-8 py-4 rounded-xl transition shadow-lg shadow-orange-600/30">
+                    Get Free Quote <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#reviews" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white text-lg font-bold px-8 py-4 rounded-xl transition">
+                    View 5-Star Proof
+                </a>
+            </div>
+            <!-- Trust badges -->
+            <div class="mt-12 pt-8 border-t border-slate-800 flex flex-wrap justify-center gap-8 text-sm text-slate-400 font-medium">
+                <div><i class="fas fa-star text-orange-500 mr-2"></i> 5.0 Rated (100+ Google Reviews)</div>
+                <div><i class="fas fa-shield-alt text-orange-500 mr-2"></i> Licensed & Fully Insured</div>
+                <div><i class="fas fa-bolt text-orange-500 mr-2"></i> Emergency Storm Damage Response</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE SERVICES SECTION -->
+    <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">Our Professional Core Services</h2>
+            <p class="text-gray-500 mt-2">Expert domestic and commercial services tailored to stand up to brutal British weather.</p>
+        </div>
+
+        <!-- Service Category Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 mb-10">
+            <button onclick="switchTab('roofing')" id="btn-roofing" class="tab-btn px-5 py-2.5 font-bold rounded-lg transition bg-orange-600 text-white shadow-md">General Roofing</button>
+            <button onclick="switchTab('flat-roofs')" id="btn-flat-roofs" class="tab-btn px-5 py-2.5 font-bold rounded-lg transition bg-white border border-gray-200 text-gray-700 hover:bg-gray-50">Flat Roofing</button>
+            <button onclick="switchTab('rooflines')" id="btn-rooflines" class="tab-btn px-5 py-2.5 font-bold rounded-lg transition bg-white border border-gray-200 text-gray-700 hover:bg-gray-50">Rooflines & Guttering</button>
+        </div>
+
+        <!-- Service Tab Panels -->
+        <div class="bg-white rounded-2xl border border-gray-100 p-8 shadow-sm">
+            <!-- Roofing Tab (Default active) -->
+            <div id="tab-roofing" class="tab-panel grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-home text-orange-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Complete New Roof</h4><p class="text-sm text-gray-500 mt-1">Full structural slating, tiling, and complete brand new roof installations.</p></div>
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-cloud-showers-heavy text-orange-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Storm & Wind Damage Repair</h4><p class="text-sm text-gray-500 mt-1">Rapid response structural patching and emergency heavy weather fixes.</p></div>
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-search text-orange-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Roof Inspection & Maintenance</h4><p class="text-sm text-gray-500 mt-1">Full system diagnostics checking for underlying leak and mortar vulnerabilities.</p></div>
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-sun text-orange-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Skylight Repair & Install</h4><p class="text-sm text-gray-500 mt-1">Seamless overhead window seals that flood your interiors with natural light.</p></div>
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-hammer text-orange-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Lead Flashing Work</h4><p class="text-sm text-gray-500 mt-1">Precision high-grade lead water diversion linings around chimneys and joints.</p></div>
+            </div>
+
+            <!-- Flat Roofs Tab -->
+            <div id="tab-flat-roofs" class="tab-panel hidden grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-layer-group text-orange-600 text-xl mb-3"></i><h4 class="font-bold text-lg">EPDM Rubber Roofing</h4><p class="text-sm text-gray-500 mt-1">Ultra-low maintenance weather protective single-ply membrane setups.</p></div>
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-industry text-orange-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Fibreglass Flat Roofs (GRP)</h4><p class="text-sm text-gray-500 mt-1">Heavy-duty commercial and residential glass reinforced plastic layouts.</p></div>
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-scroll text-orange-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Felt Roofing Systems</h4><p class="text-sm text-gray-500 mt-1">Traditional multi-layer bituminous built-up hot felt replacements.</p></div>
+            </div>
+
+            <!-- Rooflines Tab -->
+            <div id="tab-rooflines" class="tab-panel hidden grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-shield-alt text-orange-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Upvc Fascias & Soffits</h4><p class="text-sm text-gray-500 mt-1">Premium structural protective board overlays that replace rotten timber boards.</p></div>
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-water text-orange-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Gutter Installation & Repairs</h4><p class="text-sm text-gray-500 mt-1">Premium water downpipe systems to perfectly manage heavy rainfall.</p></div>
+                <div class="p-5 border border-gray-100 rounded-xl bg-gray-50/50"><i class="fas fa-broom text-orange-600 text-xl mb-3"></i><h4 class="font-bold text-lg">Gutter & Roof Cleaning</h4><p class="text-sm text-gray-500 mt-1">Complete removal of blockages, dirt, and built-up moss across tiles.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REAL REVIEWS SECTION (FROM SCREENSHOTS) -->
+    <section id="reviews" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black tracking-tight">Real Reviews From Real Manchester Property Owners</h2>
+                <p class="text-slate-400 mt-2">See why your neighbors trust us with premium, flawless exterior investments.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-slate-800/80 rounded-2xl p-8 border border-slate-700/50 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex gap-1 text-orange-500"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <span class="text-xs bg-slate-700 text-slate-300 font-semibold px-2.5 py-1 rounded">Verified Review</span>
+                        </div>
+                        <p class="text-slate-300 italic">
+                            "We recently had emergency storm damage to our roof, and Brian came out straight away to help us. From the moment he arrived, he was professional, honest..."
+                        </p>
+                    </div>
+                    <div class="mt-6 flex items-center gap-3 border-t border-slate-700/50 pt-4">
+                        <div class="w-10 h-10 bg-orange-600 font-bold rounded-full flex items-center justify-center text-white">D</div>
+                        <div><h5 class="font-bold text-sm">David Canalda</h5><p class="text-xs text-slate-400">Emergency Storm Damage Repair</p></div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-800/80 rounded-2xl p-8 border border-slate-700/50 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex gap-1 text-orange-500"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <span class="text-xs bg-slate-700 text-slate-300 font-semibold px-2.5 py-1 rounded">Verified Review</span>
+                        </div>
+                        <p class="text-slate-300 italic">
+                            "Outstanding Service – Highly Recommended After having to sack my initial roofer, who left my roof exposed and vulnerable during the recent heavy..."
+                        </p>
+                    </div>
+                    <div class="mt-6 flex items-center gap-3 border-t border-slate-700/50 pt-4">
+                        <div class="w-10 h-10 bg-green-600 font-bold rounded-full flex items-center justify-center text-white">C</div>
+                        <div><h5 class="font-bold text-sm">Chrisi Williams</h5><p class="text-xs text-slate-400">Complete Roof Rescue & Tile Work</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGH CONVERTING LEAD CAPTURE ENGINE -->
+    <section id="quote" class="py-20 max-w-4xl mx-auto px-4">
+        <div class="bg-white rounded-3xl border border-gray-100 shadow-xl overflow-hidden">
+            <div class="bg-orange-600 text-white text-center p-8">
+                <h3 class="text-2xl font-black">Instantly Request Your Free Quote</h3>
+                <p class="text-orange-100 text-sm mt-1">Complete this 60-second form to instantly ping our estimation team.</p>
+            </div>
+            
+            <form id="leadForm" onsubmit="handleFormSubmit(event)" class="p-8 space-y-6">
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">First Name *</label>
+                        <input type="text" id="firstName" required class="w-full border border-gray-200 bg-gray-50 px-4 py-3 rounded-xl focus:outline-none focus:border-orange-500 focus:bg-white transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Last Name *</label>
+                        <input type="text" id="lastName" required class="w-full border border-gray-200 bg-gray-50 px-4 py-3 rounded-xl focus:outline-none focus:border-orange-500 focus:bg-white transition">
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Phone Number *</label>
+                        <input type="tel" id="phone" required class="w-full border border-gray-200 bg-gray-50 px-4 py-3 rounded-xl focus:outline-none focus:border-orange-500 focus:bg-white transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Postcode *</label>
+                        <input type="text" id="postCode" required class="w-full border border-gray-200 bg-gray-50 px-4 py-3 rounded-xl focus:outline-none focus:border-orange-500 focus:bg-white transition">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Select Primary Service Needed *</label>
+                    <select id="serviceSelect" required class="w-full border border-gray-200 bg-gray-50 px-4 py-3 rounded-xl focus:outline-none focus:border-orange-500 focus:bg-white transition font-medium">
+                        <option value="">-- Choose Option --</option>
+                        <option value="Roofing - Complete New Roof">General Roofing - Complete New Roof</option>
+                        <option value="Roofing - Storm Wind Damage">General Roofing - Storm/Wind Damage Repair</option>
+                        <option value="Flat Roofs - EPDM Rubber">Flat Roofing - EPDM Rubber / GRP Fibreglass</option>
+                        <option value="Rooflines - Fascias & Soffits">Rooflines - UPVC Fascias, Soffits & Guttering</option>
+                        <option value="Cleaning - Gutter Clears">Maintenance - Gutter & Roof Tile Cleaning</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Briefly Describe Your Needs (Optional)</label>
+                    <textarea id="description" rows="3" class="w-full border border-gray-200 bg-gray-50 px-4 py-3 rounded-xl focus:outline-none focus:border-orange-500 focus:bg-white transition"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-orange-600 hover:bg-orange-700 text-white font-black text-lg py-4 rounded-xl shadow-lg transition">
+                    Submit Secure Quote Request
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 border-t border-slate-800 text-slate-500 text-sm py-8 text-center">
+        <p>&copy; 2026 Manchester Roofs Ltd. Built to match Google Profile metrics.</p>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPTS -->
+    <script>
+        // Interactive Tab Switching Function
+        function switchTab(tabId) {
+            // Hide all panels
+            document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.add('hidden'));
+            // Show selected panel
+            document.getElementById('tab-' + tabId).classList.remove('hidden');
+            
+            // Manage Active Button Styling
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.className = "tab-btn px-5 py-2.5 font-bold rounded-lg transition bg-white border border-gray-200 text-gray-700 hover:bg-gray-50";
+            });
+            document.getElementById('btn-' + tabId).className = "tab-btn px-5 py-2.5 font-bold rounded-lg transition bg-orange-600 text-white shadow-md";
+        }
+
+        // Frontend Form Submission Logic
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            const formData = {
+                access_key: "YOUR_ACCESS_KEY_HERE", 
+                name: document.getElementById('firstName').value + " " + document.getElementById('lastName').value,
+                phone: document.getElementById('phone').value,
+                postcode: document.getElementById('postCode').value,
+                service: document.getElementById('serviceSelect').value,
+                description: document.getElementById('description').value
+            };
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    alert(`Thanks ${document.getElementById('firstName').value}! Your quote request has been sent successfully.`);
+                    document.getElementById('leadForm').reset();
+                } else {
+                    console.log(response);
+                    alert(json.message);
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                alert("Something went wrong. Please try again.");
+            });
+        }
+    </script>
+</body>
+</html>
